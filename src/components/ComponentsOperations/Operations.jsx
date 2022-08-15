@@ -10,13 +10,13 @@ function Operations(props) {
         <div>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr className='table-dark'>
                         <th scope="col" className='mjx-char MJXc-TeX-math-I'>N</th>
                         <th scope="col">%</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr className='table-active'>
                         <td className="mjx-char MJXc-TeX-math-I">X</td>
                         <td>{props.percent}</td>
                     </tr>

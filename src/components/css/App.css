@@ -1,13 +1,15 @@
 
-
 .MJXc-TeX-math-I {
-        font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw;
-    }
+    font-family: MJXc-TeX-math-I, MJXc-TeX-math-Ix, MJXc-TeX-math-Iw;
+}
 
-    .contInfo {
-        width: 545px;
-    }
+.contInfo {
+    width: 545px;
+}
 
+.progress-bar {
+    padding: 0px 3px;
+}
 
 
 .ContApp {
@@ -15,4 +17,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.progress {
+    padding: 0;
+    margin:  20px 0px !important;
+    ;
 }

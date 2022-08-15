@@ -37,9 +37,8 @@ function App() {
           numPercent={numPercent}
           num={num}
         />
-            <BarraPercent
-              percent={persent}
-              numPercent={numPercent}
+            <InputResult
+              Result={Result}
             />
 
         <div className='row'>
@@ -53,9 +52,10 @@ function App() {
               number={number}
             />
           </div>
-          <InputResult
-            Result={Result}
-          />
+            <BarraPercent
+              percent={persent}
+              numPercent={numPercent}
+            />
           <ButtonResult
             ButtonR={ButtonR}
           />
