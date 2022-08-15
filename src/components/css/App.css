@@ -1,0 +1,18 @@
+
+
+.MJXc-TeX-math-I {
+        font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw;
+    }
+
+    .contInfo {
+        width: 545px;
+    }
+
+
+
+.ContApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
