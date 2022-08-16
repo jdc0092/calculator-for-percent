@@ -1,4 +1,8 @@
 
+.progress-bar{
+    background-color: #ea006d;
+}
+
 .MJXc-TeX-math-I {
     font-family: MJXc-TeX-math-I, MJXc-TeX-math-Ix, MJXc-TeX-math-Iw;
 }
@@ -8,7 +12,9 @@
 }
 
 .progress-bar {
-    padding: 0px 3px;
+    padding: 0px 1px;
+    font-weight: 800;
+    font-size: 17px;
 }
 
 
@@ -21,6 +27,13 @@
 
 .progress {
     padding: 0;
-    margin:  20px 0px !important;
+    margin: 20px 0px !important;
     ;
+}
+
+.infoResult {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
