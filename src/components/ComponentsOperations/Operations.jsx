@@ -24,6 +24,10 @@ function Operations(props) {
                         <td>{props.num.toLocaleString('es-Us')}$</td>
                         <td>({props.numPercent}%)</td>
                     </tr>
+                    <tr>
+                        <td>{props.num.toLocaleString('es-Us')}$</td>
+                        <td>({props.numPercent}%)</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

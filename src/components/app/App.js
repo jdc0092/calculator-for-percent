@@ -8,7 +8,7 @@ import BarraPercent from '../ComponetBarraPercent/BarraPercent.jsx';
 
 function App() {
 
-  const [Result, setResult] = useState(0);
+  const [montPercent, setMontPercent] = useState(0);
   const [persent, setpersent] = useState('');
   const [num, setNum] = useState('');
 
@@ -23,9 +23,12 @@ function App() {
   }
 
   const ButtonR = (e) => {
-    setResult(persent * num / numPercent);
+    setMontPercent(persent * num / numPercent);
   }
+  
+const menos = num - montPercent
 
+  console.log(menos)
 
 
 
@@ -39,7 +42,7 @@ function App() {
         />
         
         <InputResult
-          Result={Result}
+          montPercent={montPercent}
         />
 
         <div className='row'>

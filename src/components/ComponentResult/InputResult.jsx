@@ -5,7 +5,7 @@ function InputResult(props) {
 
     return (
         <div className="infoResult">
-            <p>{"$" + props.Result.toLocaleString('es-Us')}</p>
+            <p>{"$" + props.montPercent.toLocaleString('es-Us')}</p>
         </div>
     )
 
