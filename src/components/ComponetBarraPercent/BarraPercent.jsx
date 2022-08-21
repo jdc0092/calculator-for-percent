@@ -4,15 +4,15 @@ import React from "react";
 
 function BarraPercent(props) {
 
-    const percent = {
-        width: props.percent + "%"
+    const stylePercent = {
+        width: props.BarraPercent + "%"
     }
 
     return (
         <div className="progress mb-5">
-            <div className="progress-bar progress-barra" style={percent} 
-            role="progressbar" aria-valuenow={props.percent} aria-valuemin="0" 
-            aria-valuemax={props.numPercent}>{props.percent + "%"}</div>
+            <div className="progress-bar progress-barra" style={stylePercent} 
+            role="progressbar" aria-valuenow={props.BarraPercent} aria-valuemin="0" 
+            aria-valuemax={props.numPercent}>{props.BarraPercent + "%"}</div>
         </div>
     )
 }

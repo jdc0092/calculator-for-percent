@@ -18,15 +18,15 @@ function Operations(props) {
                 <tbody>
                     <tr className='table-active'>
                         <td className="mjx-char MJXc-TeX-math-I">X</td>
-                        <td>{props.percent}%</td>
+                        <td>{props.inputPercent}%</td>
                     </tr>
                     <tr>
-                        <td>{props.num.toLocaleString('es-Us')}$</td>
-                        <td>({props.numPercent}%)</td>
+                        <td>Total: ${props.num.toLocaleString('es-Us')}</td>
+                        <td>(Vase: a {props.numPercent.toLocaleString('es-Us')}%)</td>
                     </tr>
                     <tr>
-                        <td>{props.num.toLocaleString('es-Us')}$</td>
-                        <td>({props.numPercent}%)</td>
+                        <td>Pago: ${props.montPercent.toLocaleString('es-Us')}</td>
+                        <td>Rest: ${props.restPercent.toLocaleString('es-Us')}</td>
                     </tr>
                 </tbody>
             </table>

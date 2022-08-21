@@ -9,13 +9,13 @@ import BarraPercent from '../ComponetBarraPercent/BarraPercent.jsx';
 function App() {
 
   const [montPercent, setMontPercent] = useState(0);
-  const [persent, setpersent] = useState('');
+  const [valPercent, setvalPercent] = useState('');
   const [num, setNum] = useState('');
 
   const numPercent = 100;
 
   const percent = (e) => {
-    setpersent(e.target.value);
+    setvalPercent(e.target.value);
   }
 
   const number = (e) => {
@@ -23,41 +23,40 @@ function App() {
   }
 
   const ButtonR = (e) => {
-    setMontPercent(persent * num / numPercent);
+    setMontPercent(valPercent * num / numPercent);
   }
   
-const menos = num - montPercent
-
-  console.log(menos)
-
+const restPercent = num - montPercent;
 
 
   return (
     <div className="container ContApp">
       <div className='contInfo'>
         <Operations
-          percent={persent}
+          inputPercent={valPercent}
           numPercent={numPercent}
           num={num}
-        />
-        
-        <InputResult
+          restPercent={restPercent}
           montPercent={montPercent}
         />
+        
+        {/* <InputResult
+          montPercent={montPercent}
+        /> */}
 
         <div className='row'>
           <div className='col-md-6'>
             <InputPercent
-              percent={percent}
+              inputPercent={percent}
             />
           </div>
           <div className='col-md-6'>
             <InputNumber
-              number={number}
+              inputNumber={number}
             />
           </div>
           <BarraPercent
-            percent={persent}
+            BarraPercent={valPercent}
             numPercent={numPercent}
           />
           <ButtonResult
