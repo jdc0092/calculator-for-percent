@@ -22,7 +22,7 @@ function Operations(props) {
                     </tr>
                     <tr>
                         <td>Total: ${props.num.toLocaleString('es-Us')}</td>
-                        <td>(Vase: a {props.numPercent.toLocaleString('es-Us')}%)</td>
+                        <td>({props.numPercent.toLocaleString('es-Us')}%)</td>
                     </tr>
                     <tr>
                         <td>Pago: ${props.montPercent.toLocaleString('es-Us')}</td>

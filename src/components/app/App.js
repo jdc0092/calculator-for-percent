@@ -5,10 +5,12 @@ import InputResult from "../ComponentResult/InputResult.jsx";
 import ButtonResult from "../ButtonResult/ButtonResult.jsx";
 import Operations from "../ComponentsOperations/Operations.jsx";
 import BarraPercent from '../ComponetBarraPercent/BarraPercent.jsx';
+import ButtonRest from "../ButtonRest/ButtonRest.jsx";
 
 function App() {
 
   const [montPercent, setMontPercent] = useState(0);
+  const [montRest, setMontRest] = useState(0);
   const [valPercent, setvalPercent] = useState('');
   const [num, setNum] = useState('');
 
@@ -23,10 +25,12 @@ function App() {
   }
 
   const ButtonR = (e) => {
-    setMontPercent(valPercent * num / numPercent);
+    setMontPercent((valPercent * num) / numPercent);
   }
-  
-const restPercent = num - montPercent;
+
+  const ButtonRestCalc = (e) => {
+    setMontRest(num - montPercent);
+  }
 
 
   return (
@@ -36,10 +40,10 @@ const restPercent = num - montPercent;
           inputPercent={valPercent}
           numPercent={numPercent}
           num={num}
-          restPercent={restPercent}
+          restPercent={montRest}
           montPercent={montPercent}
         />
-        
+
         {/* <InputResult
           montPercent={montPercent}
         /> */}
@@ -55,14 +59,25 @@ const restPercent = num - montPercent;
               inputNumber={number}
             />
           </div>
+          
           <BarraPercent
             BarraPercent={valPercent}
             numPercent={numPercent}
           />
-          <ButtonResult
-            ButtonR={ButtonR}
-          />
         </div>
+
+          <div className='row'>
+            <div className='col-md-6'>
+              <ButtonResult
+                ButtonR={ButtonR}
+              />
+            </div>
+            <div className='col-md-6'>
+              <ButtonRest
+                ButtonRest={ButtonRestCalc}
+              />
+            </div>
+          </div>
       </div>
     </div>
   );
