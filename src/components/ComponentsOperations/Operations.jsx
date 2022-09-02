@@ -18,7 +18,7 @@ function Operations(props) {
                 <tbody>
                     <tr className='table-active'>
                         <td className="mjx-char MJXc-TeX-math-I">X</td>
-                        <td>{props.inputPercent}%</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Total: ${props.num.toLocaleString('es-Us')}</td>
@@ -26,7 +26,11 @@ function Operations(props) {
                     </tr>
                     <tr>
                         <td>Pago: ${props.montPercent.toLocaleString('es-Us')}</td>
+                        <td>{props.inputPercent.toLocaleString('es-Us')}%</td>
+                    </tr>
+                    <tr>
                         <td>Rest: ${props.restPercent.toLocaleString('es-Us')}</td>
+                        <td>{props.valPercentsRestant}%</td>
                     </tr>
                 </tbody>
             </table>
