@@ -27,7 +27,7 @@ function Operations(props) {
                     </tr>
                     <tr>
                         <td><b>Pago:</b> ${props.restPercent.toLocaleString('es-Us')}</td>
-                        <td>{props.num.toLocaleString('es-Us')} / {props.inputPercent.toLocaleString('es-Us')}%</td>
+                        <td>{props.inputPercent.toLocaleString('es-Us')}% / {props.num.toLocaleString('es-Us')}</td>
                     </tr>
                     <tr>
                         <td><b>Restan:</b> ${props.montPercent.toLocaleString('es-Us')}</td>
