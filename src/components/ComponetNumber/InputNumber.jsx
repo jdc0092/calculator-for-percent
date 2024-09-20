@@ -5,7 +5,7 @@ function Inputnumber(props) {
     return (
         <div>
             {/* <label>Cantidad: </label> */}
-            <input type="text" className="form-control" placeholder="$"  onChange={props.inputNumber} />
+            <input type="text" className="form-control" placeholder="Digite su monto ($)"  onChange={props.inputNumber} />
             
         </div>
 
